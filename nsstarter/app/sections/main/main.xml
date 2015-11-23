@@ -12,5 +12,7 @@
     </Page.actionBar>
     <StackLayout>
             <Label text="{{name}}" tap="{{tapAction}}"/>
+            <Button text="Take Photo" tap="{{openCamera}}"/>
+            <Image src="{{imgSrc}}" />
     </StackLayout>
 </Page>

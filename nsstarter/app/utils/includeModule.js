@@ -12,4 +12,6 @@ exports.clipboardModule = require("nativescript-clipboard");
 exports.toastModule = require("nativescript-toast");
 exports.soundModule = require("nativescript-sound");
 exports.socialShareModule = require("nativescript-social-share");
+exports.connectivityModule = require("connectivity");
+exports.cameraModule = require("camera");
 //exports.pushPlugin = require("nativescript-push-notifications");

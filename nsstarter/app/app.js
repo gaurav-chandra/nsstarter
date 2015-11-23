@@ -77,4 +77,8 @@ APP.application.on(APP.application.uncaughtErrorEvent, function (args) {
         console.log("NativeScriptError: " + args.ios);
     }
 });
+/*
+* GLOBALS
+* */
+global.myVariable = 'some value';
 APP.application.start();
