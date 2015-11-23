@@ -1,0 +1,16 @@
+<Page navigatedTo="navigatedTo" >
+    <Page.actionBar>
+        <ActionBar title="Title">
+            <ActionBar.titleView>
+                <StackLayout orientation="horizontal">
+                    <Button text="1st" />
+                    <Button text="2nd" />
+                    <Button text="3rd" />
+                </StackLayout>
+            </ActionBar.titleView>
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout>
+            <Label text="Gaurav" />
+    </StackLayout>
+</Page>
