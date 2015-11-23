@@ -1,11 +1,15 @@
 {
-	"nativescript": {
-		"id": "mobi.gaurav.nsstarter",
-		"tns-android": {
-			"version": "1.4.0"
-		}
-	},
-	"dependencies": {
-		"tns-core-modules": "1.4.0"
-	}
+  "nativescript": {
+    "id": "mobi.gaurav.nsstarter",
+    "tns-android": {
+      "version": "1.4.0"
+    }
+  },
+  "dependencies": {
+    "loki-nativescript-adapter": "^1.0.3",
+    "nativescript-drop-down": "^1.0.4",
+    "nativescript-insomnia": "^1.1.0",
+    "nativescript-push-notifications": "0.0.10",
+    "tns-core-modules": "1.4.0"
+  }
 }

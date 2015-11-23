@@ -4,3 +4,6 @@ exports.serviceModule = require("./service");
 exports.notificationsModule = require("./notifications");
 exports.constantsModule = require("./constants");
 exports.applicationSettingsModule = require("application-settings");
+exports.observableModule = require("data/observable");
+exports.insomnia = require("nativescript-insomnia");
+//exports.pushPlugin = require("nativescript-push-notifications");

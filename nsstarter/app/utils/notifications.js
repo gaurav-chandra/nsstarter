@@ -1,4 +1,8 @@
 var dialogsModule = require("ui/dialogs");
+function alert(title,message,buttonText) {
+    dialogsModule.alert({ title: title, message: message, okButtonText: buttonText });
+}
+exports.alert = alert;
 function showError(error) {
     dialogsModule.alert({ title: "Error", message: error, okButtonText: "Close" });
 }

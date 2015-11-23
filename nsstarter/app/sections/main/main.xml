@@ -1,4 +1,4 @@
-<Page navigatedTo="navigatedTo" >
+<Page navigatedTo="enter" >
     <Page.actionBar>
         <ActionBar title="Title">
             <ActionBar.titleView>
@@ -11,6 +11,6 @@
         </ActionBar>
     </Page.actionBar>
     <StackLayout>
-            <Label text="Gaurav" />
+            <Label text="{{name}}" tap="{{tapAction}}"/>
     </StackLayout>
 </Page>
