@@ -1,6 +1,7 @@
 var APP = {};
 //couple of default requires
 APP.application = require('application');
+APP.includeModules = require('./utils/includeModule');
 APP.viewsModule = require("./utils/views");
 //some global functions
 APP.rootScope = {};
@@ -14,6 +15,9 @@ APP.application.on(APP.application.launchEvent, function (args) {
         // For iOS applications, args.ios is NSDictionary (launchOptions).
         console.log("Launched iOS application with options: " + args.ios);
     }
+    APP.includeModules.insomniaModule.keepAwake().then(function() {
+        console.log("Insomnia is active");
+    });
     //this is the main view which is loaded
     APP.application.mainEntry = {
         moduleName: APP.viewsModule.Views.router,
@@ -49,6 +53,9 @@ APP.application.on(APP.application.exitEvent, function (args) {
         // For iOS applications, args.ios is UIApplication.
         console.log("UIApplication: " + args.ios);
     }
+    APP.includeModules.insomniaModule.allowSleepAgain().then(function() {
+        console.log("Insomnia is inactive, good night!");
+    });
 });
 
 APP.application.on(APP.application.lowMemoryEvent, function (args) {
